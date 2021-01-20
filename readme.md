@@ -58,10 +58,10 @@ Spring Web, Spring Data JPA, Postgresのドライバーを依存関係で準備�
  →Spring Initializrで準備すると良い  
   https://start.spring.io/  
 
-  必要なもの
-  ・Spring Web
-  ・Spring Data JPA
-  ・PostgreSQL Driver
+  必要なもの  
+  ・Spring Web  
+  ・Spring Data JPA  
+  ・PostgreSQL Driver  
   
 2. DBの作成  
 Postgresにログインして下記のようなコマンドを打っていきDB作成、User作成、権限付与していく  
@@ -99,6 +99,7 @@ postgres=# select setting from pg_settings where name = 'port';
 
 5. ビルド＆実行する
  ```
+ chmod 755 gradlew
  ./gradlew bootRun
  ~~~~~~~~~~~
  <==========---> 80% EXECUTING [15m 29s]
